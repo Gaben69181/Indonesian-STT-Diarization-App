@@ -44,7 +44,7 @@ try:
     # For consistency with pyannote, let's assume HF_TOKEN is the primary method.
     # If you've hardcoded it because HF_TOKEN wasn't working, ensure it's the correct active token.
     # For this diff, I'll use HF_TOKEN, adjust if your setup requires the hardcoded one.
-    token_to_use_stt = HF_TOKEN if HF_TOKEN else "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" # Fallback to your hardcoded one if HF_TOKEN is not set
+    token_to_use_stt = HF_TOKEN if HF_TOKEN else "YOUR_HF_TOKEN" # Fallback to your hardcoded one if HF_TOKEN is not set
     
     stt_processor = Wav2Vec2Processor.from_pretrained(stt_model_name, token=token_to_use_stt)
     stt_model = Wav2Vec2ForCTC.from_pretrained(stt_model_name, token=token_to_use_stt)

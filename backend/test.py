@@ -178,7 +178,7 @@ if __name__ == "__main__":
     # Load diarization pipeline
     HF_TOKEN = os.getenv("HF_TOKEN")
     if not HF_TOKEN:
-        HF_TOKEN = "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" # input("Masukkan Hugging Face token Anda: ").strip()
+        HF_TOKEN = "YOUR_HF_TOKEN" # input("Masukkan Hugging Face token Anda: ").strip()
 
     print("🔁 Memuat pipeline PyAnnote...")
     pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization", use_auth_token=HF_TOKEN)
