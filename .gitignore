@@ -1,0 +1,21 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+*.sqlite3
+*.db
+*.log
+*.wav
+*.mp3
+*.ogg
+*.webm
+frontend_dist/
+venv/
+.envrc
+.DS_Store
+.idea/
+*.bak
+*.swp

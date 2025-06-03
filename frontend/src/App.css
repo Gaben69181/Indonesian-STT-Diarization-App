@@ -1,0 +1,105 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: #282c34;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #21a1f1;
+}
+
+.visualizer-container,
+.transcription-container {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.visualizer-container h2,
+.transcription-container h2 {
+  margin-top: 0;
+  color: #555;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.audio-visualizer {
+  width: 100%;
+  height: 100px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.transcription-output {
+  min-height: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: left;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.transcription-output p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.transcription-output p strong {
+  color: #007bff; /* Bootstrap primary blue, or any color you prefer */
+}
+
+/* Basic styling for when recording is active, can be enhanced */
+.controls button.recording {
+  background-color: #ff6b6b; /* A reddish color for stop button */
+  color: white;
+}
+.controls button.recording:hover {
+  background-color: #e04f4f;
+}

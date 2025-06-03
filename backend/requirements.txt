@@ -1,0 +1,14 @@
+# Python dependencies for the backend
+fastapi
+uvicorn[standard]
+python-socketio
+transformers
+torch
+torchaudio
+pyannote.audio
+soundfile
+librosa
+pydub
+webrtcvad
+python-dotenv
+# Add any other specific model dependencies here later
